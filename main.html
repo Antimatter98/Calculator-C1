@@ -8,27 +8,31 @@
     </head>
     <body>
         <div class="calc-body">
-            <div class="screen">9</div>
-            <hr>
-            <div class="screen-ip">9</div>
+            <div class="display">
+                <div class="screen">9</div>
+                <!--<hr class="separator">-->
+                <div class="screen-ip">9</div>
+            </div>
             <div class="buttons">
-                <button name="numkey" onclick="keyHandler.numKey(7)">7</button>
-                <button name="numkey" onclick="keyHandler.numKey(8)">8</button>
-                <button name="numkey" onclick="keyHandler.numKey(9)">9</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(7)">7</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(8)">8</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(9)">9</button>
                 <button class="operator" name="add" onclick="keyHandler.opKey('+')">+</button>
-                <button name="numkey" onclick="keyHandler.numKey(4)">4</button>
-                <button name="numkey" onclick="keyHandler.numKey(5)">5</button>
-                <button name="numkey" onclick="keyHandler.numKey(6)">6</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(4)">4</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(5)">5</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(6)">6</button>
                 <button class="operator" name="subtract" onclick="keyHandler.opKey('-')">-</button>
-                <button name="numkey" onclick="keyHandler.numKey(1)">1</button>
-                <button name="numkey" onclick="keyHandler.numKey(2)">2</button>
-                <button name="numkey" onclick="keyHandler.numKey(3)">3</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(1)">1</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(2)">2</button>
+                <button class="num" name="numkey" onclick="keyHandler.numKey(3)">3</button>
                 <button class="operator" name="multiply" onclick="keyHandler.opKey('*')">*</button>
-                <button class="operator" name="divide" onclick="keyHandler.opKey('/')">/</button>
-                <button name="numkey" onclick="keyHandler.numKey(0)">0</button>
-                <button name="decimal">.</button>
+                <button class="num" id="zero" name="numkey" onclick="keyHandler.numKey(0)">0</button>
+                <button class="num" name="decimal">.</button>
                 <!--onclick="keyHandler.decKey('.')-->
-                <button name="clear" style="background-color: red;" onclick="keyHandler.clearKey()">C</button>
+                <button class="operator" name="divide" onclick="keyHandler.opKey('/')">/</button>
+                <button class="canc" name="clear" onclick="">C</button>
+                <button class="canc" name="clear" onclick="keyHandler.clearKey()">AC</button>
+                <button class="operator" name="percent" onclick="">%</button>
                 <button class="equal" name="calculate" onclick="keyHandler.equalKey('=')">=</button>
             </div>
         </div>
