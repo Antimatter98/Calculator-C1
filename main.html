@@ -9,9 +9,8 @@
     <body>
         <div class="calc-body">
             <div class="display">
-                <div class="screen">9</div>
-                <!--<hr class="separator">-->
-                <div class="screen-ip">9</div>
+                <div class="screen">0</div>
+                <div class="screen-ip">0</div>
             </div>
             <div class="buttons">
                 <button class="num" name="numkey" onclick="keyHandler.numKey(7)">7</button>
@@ -27,12 +26,11 @@
                 <button class="num" name="numkey" onclick="keyHandler.numKey(3)">3</button>
                 <button class="operator" name="multiply" onclick="keyHandler.opKey('*')">*</button>
                 <button class="num" id="zero" name="numkey" onclick="keyHandler.numKey(0)">0</button>
-                <button class="num" name="decimal">.</button>
-                <!--onclick="keyHandler.decKey('.')-->
+                <button class="num" name="decimal" onclick="keyHandler.decKey('.')">.</button>
                 <button class="operator" name="divide" onclick="keyHandler.opKey('/')">/</button>
-                <button class="canc" name="clear" onclick="">C</button>
+                <button class="canc" name="clear" onclick="keyHandler.backKey()">C</button>
                 <button class="canc" name="clear" onclick="keyHandler.clearKey()">AC</button>
-                <button class="operator" name="percent" onclick="">%</button>
+                <button class="operator" name="percent" onclick="keyHandler.perKey('%')">%</button>
                 <button class="equal" name="calculate" onclick="keyHandler.equalKey('=')">=</button>
             </div>
         </div>
