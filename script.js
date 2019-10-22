@@ -57,6 +57,7 @@ var screenHandler = {
                         screenIp.textContent = '0';
                         this.opDisp('0');
                         prevCont = '0';
+                        alert("Cannot use this operator at the beginning of an expression!");
                     }
                     else{
                         screenIp.textContent = cont;
@@ -66,6 +67,7 @@ var screenHandler = {
                 }
             }
             else{
+                alert("Consecutive operator input is prohibited!");
                 screenIp.textContent = '0';
                 screen.textContent = '0';
                 prevCont = '0';
@@ -75,6 +77,7 @@ var screenHandler = {
             screen.textContent = '0';
             screenIp.textContent = '0';
             prevCont = '0';
+            alert("Cannot add multiple decimal points to a single number!");
         }
         else if(cont === '%'){//handles % 
             if(prevCont === '%' && prevCont === '+' && prevCont === '-' && prevCont === '*' && prevCont === '/' && prevCont === '.'){
