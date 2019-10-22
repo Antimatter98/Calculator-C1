@@ -2,4 +2,6 @@
 # Calculator-C1
 NS Capstone Project 1
 
-Try it out: https://antimatter98.github.io/Calculator-C1/main.html
+Try it out: https://antimatter98.github.io/Calculator-C1/
+
+Deployed on Netlify: https://calculator-c1.netlify.com
